@@ -32,3 +32,92 @@ body {
 .form section input {
   flex-basis: 45%;
 }
+
+/* main chat body */
+.mainchatbody {
+  background-color: green;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: top;
+}
+.mainchatbody > header {
+  height: 10vh;
+  background-color: rgb(27, 27, 27);
+  display: flex;
+  align-items: center;
+  padding: 1% 2%;
+}
+.mainchatbody > header > div {
+  background-color: blue;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+.mainchatbody > header > h2 {
+  margin-left: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: white;
+  text-transform: capitalize;
+}
+.mainchatbody > .messagebox {
+  height: 10vh;
+  background-color: rgb(27, 27, 27);
+  padding: 0 2%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mainchatbody > .messagebox > input {
+  margin-top: 0;
+  height: 5vh;
+  font-size: 2vh;
+  width: 80%;
+  outline: none;
+  border-color: transparent;
+  color: white;
+  background-color: rgb(27, 27, 27);
+}
+.mainchatbody > .messagebox > button {
+  height: 7vh;
+  width: 7vh;
+  border-radius: 50%;
+  border-color: white;
+  color: white;
+  background-color: rgb(27, 27, 27);
+  cursor: pointer;
+}
+.mainchatbody > .messagelist {
+  height: 80vh;
+  background-color: orange;
+  list-style-type: none;
+  margin: 0;
+  padding: 1% 2%;
+}
+.mainchatbody > .messagelist > li {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  padding: 2vw 8vw 2vw 2vw;
+  margin-bottom: 1vh;
+}
+.mainchatbody > .messagelist > .reciepient {
+  background-color: rgb(93, 93, 93);
+  border-radius: 0 10px 10px 10px;
+  float: left;
+}
+.mainchatbody > .messagelist > .sender {
+  background-color: rgb(41, 80, 14);
+  border-radius: 10px 0 10px 10px;
+  float: right;
+}
+
+.mainchatbody > .messagelist > li > p {
+  margin: 0;
+  font-size: 2vh;
+  color: white;
+  margin-left: 3px;
+}

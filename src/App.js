@@ -1,9 +1,10 @@
-import CreateAccount from "./components/createAccount";
-import Contactlist from "./components/Contactlist";
+// import CreateAccount from "./components/createAccount";
+// import Contactlist from "./components/Contactlist";
+import Chat from "./components/chat";
 function App() {
   return (
     <>
-      <Contactlist />
+      <Chat />
     </>
   );
 }

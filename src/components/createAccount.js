@@ -8,7 +8,7 @@ const CreateAccount = () => {
   const [userName, setUserName] = useState("");
 
   const addNewUser = () => {
-    set(ref(db, `user/${userName}`), {
+    set(ref(db, `user/` + userName), {
       password: password,
       full_name: `${firstName} ${lastName}`,
     });
